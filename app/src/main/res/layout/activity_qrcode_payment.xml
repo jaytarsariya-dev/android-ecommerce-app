@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="66dp"
+    tools:context=".QRCodePaymentActivity">
+
+    <!-- QR Code ImageView -->
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/qr" />
+
+    <!-- Simulate Payment Success Message (Optional) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan the QR Code to pay"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Download QR Code Button -->
+    <EditText
+        android:id="@+id/utrEditText"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="UTR Number"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Make Payment Button -->
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edt"
+        android:text="Confirm Payment"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edt"
+        android:text="Download QR"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+</LinearLayout>

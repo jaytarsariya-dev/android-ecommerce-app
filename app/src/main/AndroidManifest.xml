@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ecommerce"
+        android:label="Shopgalaxy"
+        android:roundIcon="@drawable/ecommerce"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidMinorProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".Wishlist"
+            android:exported="false" />
+        <activity
+            android:name=".Support"
+            android:exported="false" />
+        <activity
+            android:name=".Payondelivery"
+            android:exported="false" />
+        <activity
+            android:name=".QRCodePaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhonePayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GooglePayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Contactus"
+            android:exported="false" />
+        <activity
+            android:name=".Aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryRecords"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".AllCategories"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".MyOrders"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".User"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".DetailActivity1"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Userpanel"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Forgot"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Updateshow"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Adminpanel"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Loginforadmin"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Loginforuser"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+    </application>
+
+</manifest>

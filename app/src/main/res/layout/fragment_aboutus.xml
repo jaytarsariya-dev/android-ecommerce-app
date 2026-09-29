@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".AboutusFragment">
+
+    <!-- ScrollView to ensure content is scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <!-- Image representing the app or company logo -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="221dp"
+                android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:contentDescription="App Logo" />
+
+            <!-- Title for About Us -->
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black" />
+
+            <!-- Paragraph describing the app's mission and purpose -->
+            <TextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to our Food Ordering Application, your number one source for the best food delivery services. We're dedicated to providing you with the finest selection of dishes, with a focus on quality, convenience, and customer satisfaction."
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/black" />
+
+            <!-- Another paragraph for details like history, mission -->
+            <TextView
+                android:id="@+id/aboutDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Founded in 2024, our app has come a long way from its beginnings in a small office. We now serve customers all over the city, and are thrilled to be a part of the ever-growing food delivery industry."
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/black" />
+
+            <!-- Contact Information (Optional) -->
+            <TextView
+                android:id="@+id/contactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For any inquiries, feel free to contact us at: support@foodorderingapp.com"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

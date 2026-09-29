@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:background="@color/lb"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back2"
+                android:layout_width="78dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center|left"
+                android:layout_weight="1"
+                android:background="@color/lb"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="334dp"
+                android:layout_height="72dp"
+                android:background="@color/lb"
+                android:gravity="left|center"
+                android:text="Update Product Details"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="62dp" />
+
+
+
+        <ImageView
+            android:id="@+id/updateImage"
+            android:layout_width="180dp"
+            android:layout_height="148dp"
+            android:layout_marginLeft="115dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_image"/>
+
+
+
+        <EditText
+            android:id="@+id/updateName"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/updatePrice"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Price"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/updateDesc"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Description"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/updateCategory"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Category"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="345dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/lb"
+            android:text="Update Item"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:cornerRadius="20dp" />
+
+        <EditText
+            android:id="@+id/updateId"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Id"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</RelativeLayout>

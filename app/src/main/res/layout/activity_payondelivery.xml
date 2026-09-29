@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Payondelivery">
+
+    <!-- Delivery Information Section -->
+    <TextView
+        android:id="@+id/deliveryInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Information"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+
+
+    <EditText
+        android:id="@+id/mobileNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Enter contact number"
+        android:background="@drawable/custom_edittext"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Enter delivery address"
+        android:inputType="text"
+        android:lines="5"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Payment Option Section -->
+    <TextView
+        android:id="@+id/paymentOptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Payment Method"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+    <RadioGroup
+        android:id="@+id/paymentOptionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioPayOnDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay on Delivery"
+            android:textColor="@color/black"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <!-- Confirm Order Button -->
+    <Button
+        android:id="@+id/confirmOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="@color/white"
+        android:text="Confirm Order"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>

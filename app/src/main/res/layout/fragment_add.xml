@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/lb"
+            android:gravity="center"
+            android:text="Add Product Details"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="68dp" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="180dp"
+            android:layout_height="148dp"
+            android:layout_marginLeft="115dp"
+            android:src="@drawable/add_image"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/edt_product_id"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp" />
+
+
+        <EditText
+            android:id="@+id/edt_product_name"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/edt_product_price"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Price"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/edt_product_quantity"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Quantity"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/edt_product_des"
+            android:layout_width="345dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Enter Description"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textMultiLine"
+            android:textSize="23dp" />
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="345dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Item"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_spinner_background"
+            android:textSize="25dp"
+            android:spinnerMode="dropdown"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="345dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/lb"
+            android:text="Add Item"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+</FrameLayout>
